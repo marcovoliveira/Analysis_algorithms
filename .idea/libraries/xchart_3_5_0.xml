@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="xchart-3.5.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../Biblioteca Gráfico/Grafico/xchart-3.5.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
