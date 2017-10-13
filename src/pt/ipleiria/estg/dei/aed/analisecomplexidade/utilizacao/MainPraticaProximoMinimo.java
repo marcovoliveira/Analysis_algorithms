@@ -1,6 +1,7 @@
 package pt.ipleiria.estg.dei.aed.analisecomplexidade.utilizacao;
 
-import pt.ipleiria.estg.dei.aed.analisecomplexidade.algoritmos.Equipas;
+
+import pt.ipleiria.estg.dei.aed.analisecomplexidade.algoritmos.ProximoMinimo;
 import pt.ipleiria.estg.dei.aed.utils.Estatistica;
 import pt.ipleiria.estg.dei.aed.utils.VetorDeInteiros;
 import pt.ipleiria.estg.dei.aed.utils.VetorDePoint2D;
@@ -10,13 +11,13 @@ import java.awt.geom.Point2D;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainPraticaEquipas {
-    public  MainPraticaEquipas() {
+public class MainPraticaProximoMinimo {
+    public  MainPraticaProximoMinimo() {
 
-        Equipas equipas = new Equipas();
+        ProximoMinimo proximoMinimo = new ProximoMinimo();
         int j = 4;
         do {
-            equipas.getEstatistica(VetorDePoint2D.criarAleatorio(50));
+            proximoMinimo.getEstatistica(VetorDePoint2D.criarAleatorio(20));
             j++;
         }
         while (j < 10);
@@ -24,7 +25,7 @@ public class MainPraticaEquipas {
         List<Estatistica> estatisticas = new ArrayList<>();
 
         for (int i = 10; i <= 100; i+=10){
-            estatisticas.add(equipas.getEstatistica(VetorDePoint2D.criarAleatorio(5)));
+            estatisticas.add(proximoMinimo.getEstatistica(VetorDePoint2D.criarAleatorio(5)));
         }
 
 
@@ -35,7 +36,7 @@ public class MainPraticaEquipas {
 
     public static void main (String[] args) {
 
-        new MainPraticaEquipas();
+        new MainPraticaProximoMinimo();
     }
 }
 

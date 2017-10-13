@@ -6,7 +6,7 @@ import pt.ipleiria.estg.dei.aed.utils.EstatisticaDeComparacoes;
 import java.awt.geom.Point2D;
 import java.util.Arrays;
 
-public class Equipas {
+public class ProximoMinimo {
 
     public void executar(EstatisticaDeComparacoes estatistica, Point2D... equipas) {
         int Ponto1 = 0;
