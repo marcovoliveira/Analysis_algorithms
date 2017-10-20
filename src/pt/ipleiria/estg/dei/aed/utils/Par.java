@@ -14,12 +14,12 @@ public class Par<T1, T2> {
         return primeiro;
     }
 
-    public T2 getSegundo() {
-        return segundo;
-    }
-
     public void setPrimeiro(T1 primeiro) {
         this.primeiro = primeiro;
+    }
+
+    public T2 getSegundo() {
+        return segundo;
     }
 
     public void setSegundo(T2 segundo) {
@@ -30,4 +30,5 @@ public class Par<T1, T2> {
     public String toString() {
         return "Primeiro: " + primeiro + "   Segundo: " + segundo;
     }
+
 }

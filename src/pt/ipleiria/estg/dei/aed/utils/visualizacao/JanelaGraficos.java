@@ -26,7 +26,7 @@ public class JanelaGraficos {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         // chart
-        for (Grafico g:graficos) {
+        for (Grafico g : graficos) {
             JPanel chartPanel = new XChartPanel<XYChart>(g.gerarChart());
             frame.add(chartPanel);
         }

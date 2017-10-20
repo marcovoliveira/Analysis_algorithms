@@ -23,7 +23,7 @@ public class Grafico {
         listaY = new LinkedList<>();
     }
 
-    public void adicionarPonto(int x, double ... y) {
+    public void adicionarPonto(int x, double... y) {
         listaX.add(x);
         listaY.add(y);
     }

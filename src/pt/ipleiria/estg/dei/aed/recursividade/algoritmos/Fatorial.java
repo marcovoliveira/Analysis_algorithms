@@ -1,37 +1,30 @@
 package pt.ipleiria.estg.dei.aed.recursividade.algoritmos;
 
-import pt.ipleiria.estg.dei.aed.utils.EstatisticaChamadas;
+import pt.ipleiria.estg.dei.aed.utils.EstatisticaDeChamadas;
 
 public class Fatorial {
-
-    public int executar(EstatisticaChamadas estatistica, int n)
-    {
-        estatistica.incrementarChamadas();
-        if(n<0) //validação dos parametros
-        {
-            throw new IllegalArgumentException("n tem de ser > 0");
+    public long executar(EstatisticaDeChamadas estatisticas, int n) {
+        estatisticas.incrementarChamadas();
+        if (n < 0) {
+            throw new IllegalArgumentException("fatorial(" + n + ")= argumento inválido : deve ser >= 0");
         }
-        if(n == 0) { //ponto base
+        if (n < 2) {
             return 1;
         }
-
-            return n*executar(estatistica,n-1); //chamada convergente
+        return n * executar(estatisticas, n - 1);
     }
 
-    public EstatisticaChamadas estatisticaChamadas(int n)
-    {
+    public EstatisticaDeChamadas getEstatistica(int n) {
         try {
-            EstatisticaChamadas estatistica = new EstatisticaChamadas(n);
-            int resultado = executar(estatistica, n);
+            EstatisticaDeChamadas estatistica = new EstatisticaDeChamadas(n);
+            long result = executar(estatistica, n);
             estatistica.parar();
 
-            System.out.println("Fatorial de " + n + " é: " + resultado);
+            System.out.println("fatorial(" + n + ") = " + result);
             estatistica.apresentar();
-
             return estatistica;
-        }catch (IllegalArgumentException ex)
-        {
-            System.out.println("Não é possivel calcular o fatorial("+n+")");
+        } catch (IllegalArgumentException ex) {
+            System.out.println(ex.getMessage() + "\n");
             return null;
         }
     }
