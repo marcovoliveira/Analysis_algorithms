@@ -5,16 +5,18 @@ import pt.ipleiria.estg.dei.aed.modelo.Data;
 public class Contacto {
     private String primeiroNome;
     private String ultimoNome;
+    private long numeroTelefone;
     private String morada;
     private Data dataNascimento;
-    private Long numeroTelefone;
 
-    public Contacto(String primeiroNome, String ultimoNome, String morada, Data dataNascimento, Long numeroTelefone) {
+
+    public Contacto(String primeiroNome, String ultimoNome, long numeroTelefone, String morada, Data dataNascimento) {
         this.primeiroNome = primeiroNome;
         this.ultimoNome = ultimoNome;
+        this.numeroTelefone = numeroTelefone;
         this.morada = morada;
         this.dataNascimento = dataNascimento;
-        this.numeroTelefone = numeroTelefone;
+
     }
 
     public String getPrimeiroNome() {
@@ -25,6 +27,10 @@ public class Contacto {
         return ultimoNome;
     }
 
+    public long getNumeroTelefone() {
+        return numeroTelefone;
+    }
+
     public String getMorada() {
         return morada;
     }
@@ -33,9 +39,7 @@ public class Contacto {
         return dataNascimento;
     }
 
-    public Long getNumeroTelefone() {
-        return numeroTelefone;
-    }
+
 
     @Override
     public String toString() {

@@ -6,6 +6,14 @@ import pt.ipleiria.estg.dei.aed.utils.Par;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author Actual code:
+ * Carlos Urbano<carlos.urbano@ipleiria.pt>
+ * Catarina Reis<catarina.reis@ipleiria.pt>
+ * Marco Ferreira<marco.ferreira@ipleiria.pt>
+ * João Ramos<joao.f.ramos@ipleiria.pt>
+ * Original code: José Magno<jose.magno@ipleiria.pt>
+ */
 public class VisualizadorEstatisticas {
     private List<Par<String, List<Estatistica>>> algoritmosEstatisticas;
 

@@ -48,12 +48,12 @@ public class InsertionSort<T> extends AlgoritmoOrdenacao<T> {
            T elementoSelecionado = elementos[parteDesordenada];
 
            int elementosSequenciaOrdenada = parteDesordenada-1;
-           estatistica.incrementarComparacoes();
+         
            while (elementosSequenciaOrdenada>=0 &&
                    criterio.comparar(elementos[elementosSequenciaOrdenada], elementoSelecionado) > 0){
 
                elementos[elementosSequenciaOrdenada+1] = elementos[elementosSequenciaOrdenada];
-               estatistica.incrementarTrocas();
+               
                elementosSequenciaOrdenada--;
            }
            elementos[elementosSequenciaOrdenada+1] = elementoSelecionado;

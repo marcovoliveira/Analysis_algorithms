@@ -9,6 +9,14 @@ import org.knowm.xchart.style.XYStyler;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * @author Actual code:
+ * Carlos Urbano<carlos.urbano@ipleiria.pt>
+ * Catarina Reis<catarina.reis@ipleiria.pt>
+ * Marco Ferreira<marco.ferreira@ipleiria.pt>
+ * João Ramos<joao.f.ramos@ipleiria.pt>
+ * Original code: José Magno<jose.magno@ipleiria.pt>
+ */
 public class Grafico {
     private final String titulo;
     private final String[] series;
