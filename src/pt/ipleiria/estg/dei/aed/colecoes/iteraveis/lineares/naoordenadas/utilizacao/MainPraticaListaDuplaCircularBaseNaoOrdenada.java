@@ -2,13 +2,16 @@ package pt.ipleiria.estg.dei.aed.colecoes.iteraveis.lineares.naoordenadas.utiliz
 
 //import pt.ipleiria.estg.dei.aed.colecoes.iteraveis.IteradorIteravelDuplo;
 //import pt.ipleiria.estg.dei.aed.colecoes.iteraveis.lineares.naoordenadas.estruturas.ListaDuplaCircularBaseNaoOrdenada;
+import pt.ipleiria.estg.dei.aed.colecoes.iteraveis.lineares.IteradorIteravelDuplo;
+import pt.ipleiria.estg.dei.aed.colecoes.iteraveis.lineares.naoordenadas.estruturas.ListaDuplaCircularBaseNaoOrdenada;
 import pt.ipleiria.estg.dei.aed.modelo.contactos.Contacto;
+import pt.ipleiria.estg.dei.aed.modelo.contactos.Data;
 //import pt.ipleiria.estg.dei.aed.modelo.contactos.Data;
 
 public class MainPraticaListaDuplaCircularBaseNaoOrdenada {
 
     public MainPraticaListaDuplaCircularBaseNaoOrdenada() {
-/*
+
         ListaDuplaCircularBaseNaoOrdenada<Contacto> lista = new ListaDuplaCircularBaseNaoOrdenada<>();
 
         lista.inserir(new Contacto("Hugo", "Santos", 971234567, "Avenida 1º de Maio", new Data(18, 3, 1994)));
@@ -18,7 +21,7 @@ public class MainPraticaListaDuplaCircularBaseNaoOrdenada {
         lista.inserir(new Contacto("Ana", "Rita", 990000000, "Travessa 25 de Abril", new Data(15, 6, 2000)));
 
         System.out.println("Lista de Contactos");
-        IteradorIteravelDuplo<Contacto> iterador = lista.iterador();
+        IteradorIteravelDuplo<Contacto> iterador = (IteradorIteravelDuplo<Contacto>) lista.iterador();
         while (iterador.podeAvancar()) {
             System.out.println(iterador.avancar());
         }
@@ -40,7 +43,7 @@ public class MainPraticaListaDuplaCircularBaseNaoOrdenada {
         for (Contacto contacto : lista) {
             System.out.println(contacto);
         }
-        */
+
     }
 
 

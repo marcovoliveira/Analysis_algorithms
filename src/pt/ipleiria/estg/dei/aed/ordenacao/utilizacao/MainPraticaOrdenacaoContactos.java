@@ -1,14 +1,12 @@
 package pt.ipleiria.estg.dei.aed.ordenacao.utilizacao;
-import pt.ipleiria.estg.dei.aed.Comparacao;
-import pt.ipleiria.estg.dei.aed.modelo.Data;
 
 import pt.ipleiria.estg.dei.aed.modelo.contactos.Contacto;
+import pt.ipleiria.estg.dei.aed.modelo.contactos.Data;
 import pt.ipleiria.estg.dei.aed.modelo.contactos.comparadores.ComparacaoContactosPorNumeroTelefoneDescendente;
 import pt.ipleiria.estg.dei.aed.modelo.contactos.comparadores.ComparacaoContactosPorUltimoNomeAscendenteSeguidoPorDataNascimentoDescendente;
 import pt.ipleiria.estg.dei.aed.ordenacao.algoritmos.AlgoritmoOrdenacao;
 import pt.ipleiria.estg.dei.aed.ordenacao.algoritmos.InsertionSort;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class MainPraticaOrdenacaoContactos {

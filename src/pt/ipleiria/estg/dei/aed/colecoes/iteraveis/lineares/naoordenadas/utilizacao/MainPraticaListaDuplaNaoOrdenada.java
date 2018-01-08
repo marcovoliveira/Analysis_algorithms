@@ -1,33 +1,22 @@
 package pt.ipleiria.estg.dei.aed.colecoes.iteraveis.lineares.naoordenadas.utilizacao;
 
-//import pt.ipleiria.estg.dei.aed.colecoes.iteraveis.IteradorIteravelDuplo;
-//import pt.ipleiria.estg.dei.aed.colecoes.iteraveis.lineares.naoordenadas.estruturas.ListaDuplaNaoOrdenada;
+import pt.ipleiria.estg.dei.aed.colecoes.iteraveis.IteradorIteravelDuplo;
 import pt.ipleiria.estg.dei.aed.colecoes.iteraveis.lineares.naoordenadas.estruturas.ListaDuplaNaoOrdenada;
 import pt.ipleiria.estg.dei.aed.modelo.contactos.Contacto;
-//import pt.ipleiria.estg.dei.aed.modelo.contactos.Data;
+import pt.ipleiria.estg.dei.aed.modelo.contactos.Data;
 
+/**
+ * @author Actual code:
+ * Carlos Urbano<carlos.urbano@ipleiria.pt>
+ * Catarina Reis<catarina.reis@ipleiria.pt>
+ * Marco Ferreira<marco.ferreira@ipleiria.pt>
+ * João Ramos<joao.f.ramos@ipleiria.pt>
+ * Original code: José Magno<jose.magno@ipleiria.pt>
+ */
 public class MainPraticaListaDuplaNaoOrdenada {
 
     public MainPraticaListaDuplaNaoOrdenada() {
 
-        ListaDuplaNaoOrdenada<String> lista = new ListaDuplaNaoOrdenada<>();
-
-        lista.inserirNoFim("Um");
-        lista.inserirNoFim("Dois");
-        lista.inserirNoFim("Tres");
-        lista.inserirNoFim("Cinco");
-         lista.inserirNoFim("Seis");
-        lista.inserirNoInicio("Quatro");
-        lista.inserir(5,"Novo");
-        lista.removerDoInicio();
-        lista.removerDoFim();
-        lista.remover(2);
-        lista.remover("Nove");
-        lista.removerPorReferencia("Dois");
-
-
-
-    /*
         ListaDuplaNaoOrdenada<Contacto> lista = new ListaDuplaNaoOrdenada<>();
 
         lista.inserir(new Contacto("Hugo", "Santos", 971234567, "Avenida 1º de Maio", new Data(18, 3, 1994)));
@@ -59,14 +48,10 @@ public class MainPraticaListaDuplaNaoOrdenada {
         for (Contacto contacto : lista) {
             System.out.println(contacto);
         }
-        */
-
-
     }
 
 
     public static void main(String[] args) {
         new MainPraticaListaDuplaNaoOrdenada();
-
     }
 }

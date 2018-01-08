@@ -1,7 +1,5 @@
 package pt.ipleiria.estg.dei.aed.modelo.contactos;
 
-import pt.ipleiria.estg.dei.aed.modelo.Data;
-
 import java.io.*;
 import java.util.InvalidPropertiesFormatException;
 
@@ -21,7 +19,7 @@ public class ContactosIO {
                 throw new InvalidPropertiesFormatException("Contacto invalido!  " +linha);
             }
             contactos[posContacto] = new Contacto(partes[0], partes[1],
-                    Long.parseLong(partes[2]), partes[3], Data.ParseData(partes[4]));
+                    Long.parseLong(partes[2]), partes[3], Data.parseData(partes[4]));
             posContacto++;
         }
 
